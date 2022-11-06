@@ -37,6 +37,8 @@ jobs:
 
       - run: brew test-bot --only-formulae
         timeout-minutes: 400
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         if: github.event_name == 'pull_request'
 
       - name: Upload bottles as artifact
