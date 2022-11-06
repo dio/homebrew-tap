@@ -11,6 +11,12 @@ class Envoy < Formula
     regex(/^v?(\d+(?:\.\d+)+)$/i)
   end
 
+  bottle do
+    root_url "https://github.com/dio/homebrew-tap/releases/download/envoy-1.24.0"
+    sha256 cellar: :any_skip_relocation, arm64_monterey: "468eb1c1912b4b98c66cf9f59e00609967851c2cc786cf0647a8368ec8853b8c"
+    sha256 cellar: :any_skip_relocation, monterey:       "ef21a28e0002691b67d2576fa85f7d87378da1a245010e245ad50d802690e673"
+  end
+
   depends_on "automake" => :build
   depends_on "bazelisk" => :build
   depends_on "cmake" => :build
