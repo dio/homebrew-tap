@@ -12,9 +12,9 @@ class EnvoyAT123 < Formula
   end
 
   bottle do
-    root_url "https://github.com/dio/homebrew-tap/releases/download/envoy@1.23-1.23.1"
-    sha256 cellar: :any_skip_relocation, arm64_monterey: "be24c4fe5e33b5c45660d37b23f759d16a0dd440a620389244bee232113fd178"
-    sha256 cellar: :any_skip_relocation, monterey:       "432f9f3caddd0395e8c471054c8d78d755f51e5315ba7693b4091e27b5fe047c"
+    root_url "https://github.com/dio/homebrew-tap/releases/download/envoy@1.23-1.23.2"
+    sha256 cellar: :any_skip_relocation, arm64_monterey: "25debe1b8e6955a196d8ab5ca73b69a8546f1153a75c42e788c3deb5a29d34e2"
+    sha256 cellar: :any_skip_relocation, monterey:       "f22f6cd31978b8ec6bdf56aa8325eb221ea5ca52dfb1ea930b0d454f49c95736"
   end
 
   depends_on "automake" => :build
