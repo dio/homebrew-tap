@@ -11,7 +11,7 @@ class EnvoyMiniBuilder < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/dio/envoy-mini-builder/releases/download/v0.1.0/envoy-mini-builder_0.1.0_darwin_arm64.tar.gz"
-      sha256 "2360cca96c95c3b4ffd8b6bc447b6f9f7f7c0e940c0ebc3d50d86b18df490b33"
+      sha256 "ce3f18744f06cfe4e9d40d38386f07d66628ff002720fcc9c5f85571caa46b89"
 
       define_method(:install) do
         bin.install "envoy-mini-builder"
@@ -22,14 +22,14 @@ class EnvoyMiniBuilder < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/dio/envoy-mini-builder/releases/download/v0.1.0/envoy-mini-builder_0.1.0_linux_amd64.tar.gz"
-      sha256 "ab895642714508721cc0e2b298358568aa7af3534c4cf772fcab1780c0e855cd"
+      sha256 "2323fb5bb60322d05dcab6e4ad84fff49dc516356f08112861909c89eb46443a"
       define_method(:install) do
         bin.install "envoy-mini-builder"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/dio/envoy-mini-builder/releases/download/v0.1.0/envoy-mini-builder_0.1.0_linux_arm64.tar.gz"
-      sha256 "bd59c0c5b20c548ec65ae2ce4579024c50be2d70d8180b58e65b432e2cf0781f"
+      sha256 "ac26aac93e1ff8df0dfbd280861cc1245ff2784787a0ce8fa37b83272075a68a"
       define_method(:install) do
         bin.install "envoy-mini-builder"
       end
