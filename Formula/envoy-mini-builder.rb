@@ -5,13 +5,13 @@
 class EnvoyMiniBuilder < Formula
   desc "Build Envoy on a remote Mac mini and publish GitHub release assets"
   homepage "https://github.com/dio/envoy-mini-builder"
-  version "0.6.8"
+  version "0.6.9"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/dio/envoy-mini-builder/releases/download/v0.6.8/envoy-mini-builder_0.6.8_darwin_arm64.tar.gz"
-      sha256 "648308322413d062aa8433b0796eddbe9fd13e910a6cb990a81ffb0805c2a15f"
+      url "https://github.com/dio/envoy-mini-builder/releases/download/v0.6.9/envoy-mini-builder_0.6.9_darwin_arm64.tar.gz"
+      sha256 "822c8c7f3d91497ac4dc309c280e39fd73f0ab9018923906d1d9ccb7aed95997"
 
       define_method(:install) do
         bin.install "envoy-mini-builder"
@@ -21,15 +21,15 @@ class EnvoyMiniBuilder < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dio/envoy-mini-builder/releases/download/v0.6.8/envoy-mini-builder_0.6.8_linux_amd64.tar.gz"
-      sha256 "b4fb06af2b6cc970d799952cf908008ffb3447dd389caa64de0a00fcf26d637d"
+      url "https://github.com/dio/envoy-mini-builder/releases/download/v0.6.9/envoy-mini-builder_0.6.9_linux_amd64.tar.gz"
+      sha256 "0abd81b69d36041fa20fa88ffd4952626aed5f666aa3d9003827dfa214ddef3b"
       define_method(:install) do
         bin.install "envoy-mini-builder"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dio/envoy-mini-builder/releases/download/v0.6.8/envoy-mini-builder_0.6.8_linux_arm64.tar.gz"
-      sha256 "e3a1b6dc227b962e671520fc3b9b16f008a797a353e88d4a9f5dc22e5d6cd9f1"
+      url "https://github.com/dio/envoy-mini-builder/releases/download/v0.6.9/envoy-mini-builder_0.6.9_linux_arm64.tar.gz"
+      sha256 "348e7c653ebb0505d46ba523da22183b84c104b73fbf307f886b412a3f7646c3"
       define_method(:install) do
         bin.install "envoy-mini-builder"
       end
