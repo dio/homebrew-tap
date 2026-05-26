@@ -5,21 +5,21 @@
 class GatewayPairs < Formula
   desc "Deploy Envoy Gateway as isolated controller+dataplane pairs in a Kubernetes cluster"
   homepage "https://github.com/dio/gateway-pairs"
-  version "0.2.0"
+  version "0.2.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dio/gateway-pairs/releases/download/v0.2.0/gateway-pairs_0.2.0_darwin_amd64.tar.gz"
-      sha256 "2d8ff7c9975387c255acd8f4d83c2eb623dca2a7cd3390a25dceeece4fe612e2"
+      url "https://github.com/dio/gateway-pairs/releases/download/v0.2.1/gateway-pairs_0.2.1_darwin_amd64.tar.gz"
+      sha256 "82c7a91d588150b26ceb2408865122ad967b40ff2b4493d5967175dbad952428"
 
       define_method(:install) do
         bin.install "gwp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dio/gateway-pairs/releases/download/v0.2.0/gateway-pairs_0.2.0_darwin_arm64.tar.gz"
-      sha256 "4573006269208159c42cf477ede0422f56822ed7328cc027adfdc2526932d069"
+      url "https://github.com/dio/gateway-pairs/releases/download/v0.2.1/gateway-pairs_0.2.1_darwin_arm64.tar.gz"
+      sha256 "6bd6a4a0ddfefd8cdb05163f1ec73182385e59b0de3f77ab8af0ab3d33b693a8"
 
       define_method(:install) do
         bin.install "gwp"
@@ -29,15 +29,15 @@ class GatewayPairs < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dio/gateway-pairs/releases/download/v0.2.0/gateway-pairs_0.2.0_linux_amd64.tar.gz"
-      sha256 "9694159e5e347df70304be7df24d5be56450f1e1bacadf875f202bf41eac0d4f"
+      url "https://github.com/dio/gateway-pairs/releases/download/v0.2.1/gateway-pairs_0.2.1_linux_amd64.tar.gz"
+      sha256 "ef1aa05e899d3c1dafaee15aff470d8520dee3557ff580d6faf1027d9a9bf7d1"
       define_method(:install) do
         bin.install "gwp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dio/gateway-pairs/releases/download/v0.2.0/gateway-pairs_0.2.0_linux_arm64.tar.gz"
-      sha256 "a6efd6f10c59c3d114f059ca0310bd9f1d5fe2f78a625ec27aba5f48be07b95b"
+      url "https://github.com/dio/gateway-pairs/releases/download/v0.2.1/gateway-pairs_0.2.1_linux_arm64.tar.gz"
+      sha256 "14ad074f89325e8dad633b8c2a75e6d591535b3faba246f85c6d2a397fb35ea1"
       define_method(:install) do
         bin.install "gwp"
       end
