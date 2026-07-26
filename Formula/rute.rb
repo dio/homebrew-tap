@@ -18,8 +18,9 @@ class Rute < Formula
       -X main.buildDate=2026-07-26T18:49:06+07:00
     ].join(" ")
 
-    system "go", "build", *std_go_args(ldflags: ldflags, output: libexec/"rute"), "./cmd/proxy"
-    bin.write_exec_script libexec/"rute"
+    system "go", "build", *std_go_args(ldflags: ldflags, output: libexec/"rute-proxy"), "./cmd/proxy"
+    bin.write_exec_script libexec/"rute-proxy"
+    bin.install_symlink bin/"rute-proxy" => "rute"
   end
 
   test do
