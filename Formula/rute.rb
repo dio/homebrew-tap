@@ -14,6 +14,7 @@ class Rute < Formula
 
       define_method(:install) do
         bin.install "rute"
+        system "/usr/bin/codesign", "--force", "--sign", "-", bin/"rute"
       end
     end
     if Hardware::CPU.arm?
@@ -22,6 +23,7 @@ class Rute < Formula
 
       define_method(:install) do
         bin.install "rute"
+        system "/usr/bin/codesign", "--force", "--sign", "-", bin/"rute"
       end
     end
   end
