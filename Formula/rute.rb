@@ -5,8 +5,8 @@
 class Rute < Formula
   desc "Loopback OpenAI-compatible proxy backed by Codex OAuth"
   homepage "https://github.com/dio/rute"
-  url "https://github.com/dio/rute/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "d7f881c72e222a1136226ce0542c98870dfa161e2f9ae1ff7b302f7af84d15c7"
+  url "https://github.com/dio/rute/releases/download/v0.1.2/rute_0.1.2_source.tar.gz"
+  sha256 "f9c9d1e343adc71845ed16f4825ab7cd2d91c6a436df0faa595c4f10681bb2c5"
 
   depends_on "go" => :build
 
@@ -14,8 +14,8 @@ class Rute < Formula
     ldflags = %W[
       -s -w
       -X main.version=#{version}
-      -X main.commit=ec5c0f7a872900736feafea732c463ed16b1dbfe
-      -X main.buildDate=2026-07-26T18:49:06+07:00
+      -X main.commit=e876a65341398db5df990520784bd1ca0d855519
+      -X main.buildDate=2026-07-26T19:28:11+07:00
     ].join(" ")
 
     system "go", "build", *std_go_args(ldflags: ldflags, output: libexec/"rute-proxy"), "./cmd/proxy"
