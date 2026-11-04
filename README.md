@@ -1,11 +1,7 @@
-# Dio Tap
+# Homebrew tap
 
-## How do I install these formulae?
+```sh
+brew install dio/tap/<formula>
+```
 
-`brew install dio/tap/<formula>`
-
-Or `brew tap dio/tap` and then `brew install <formula>`.
-
-## Documentation
-
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+Formulae are published by each project's release workflow. Do not edit them by hand.
