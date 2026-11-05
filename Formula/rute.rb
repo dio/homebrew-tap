@@ -3,28 +3,28 @@
 
 # This file is published by the rute release workflow. DO NOT EDIT.
 class Rute < Formula
-  desc "Local proxy for Claude Code and Codex CLI across several subscriptions"
+  desc "Run Claude Code, Codex CLI, and Command Code on your subscriptions"
   homepage "https://github.com/dio/rute"
 
   on_macos do
     on_arm do
-      url "https://github.com/dio/rute/releases/download/v0.4.0/rute_0.4.0_darwin_arm64.tar.gz"
-      sha256 "81978f88ecb4d7c59f6d444c751a43f4cfc61fb392340488dacff4691d57385f"
+      url "https://github.com/dio/rute/releases/download/v0.4.1/rute_0.4.1_darwin_arm64.tar.gz"
+      sha256 "35c947cb295f01082d16abefac316f6cc8f36faca53be3bb2e0727942f8e2bba"
     end
     on_intel do
-      url "https://github.com/dio/rute/releases/download/v0.4.0/rute_0.4.0_darwin_amd64.tar.gz"
-      sha256 "d402ef68b9d51f5e16418a885cd3aa0b9dd837871edbe1d0dfe4795492bc893e"
+      url "https://github.com/dio/rute/releases/download/v0.4.1/rute_0.4.1_darwin_amd64.tar.gz"
+      sha256 "0e215bcccfb274536210f62376ca2ec5a1fdfbcd8887495d23bfaf8c2adba764"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/dio/rute/releases/download/v0.4.0/rute_0.4.0_linux_arm64.tar.gz"
-      sha256 "ff7d8c8c99cf50d27c79da449d7aed4adde6e34a2e75ab5ba200ecdeed312509"
+      url "https://github.com/dio/rute/releases/download/v0.4.1/rute_0.4.1_linux_arm64.tar.gz"
+      sha256 "65453d8ebca66fb954b74e0e7aa6e01b7b010609f16cfc05d5c902de7da56cc9"
     end
     on_intel do
-      url "https://github.com/dio/rute/releases/download/v0.4.0/rute_0.4.0_linux_amd64.tar.gz"
-      sha256 "3bd61a162616527b118d1eb93623654528ee2e6819e525f6208b4ddcc450341f"
+      url "https://github.com/dio/rute/releases/download/v0.4.1/rute_0.4.1_linux_amd64.tar.gz"
+      sha256 "9673d3d0b2017907b73cba8218da5ea635a0c1bfaa17b61bb181ab2366b5c608"
     end
   end
 
