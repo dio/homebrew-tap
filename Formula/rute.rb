@@ -8,23 +8,23 @@ class Rute < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/dio/rute/releases/download/v0.4.5/rute_0.4.5_darwin_arm64.tar.gz"
-      sha256 "ac0d8e0dc8bdd851a232ba1e4ad7dc8d2ce4a7e23f70e1bb3c969e7ec345eab4"
+      url "https://github.com/dio/rute/releases/download/v0.4.6/rute_0.4.6_darwin_arm64.tar.gz"
+      sha256 "23b567281617d4a1bbeef2ede7e353bb6e4c8ffcb8f1920563b71eeff8534bf3"
     end
     on_intel do
-      url "https://github.com/dio/rute/releases/download/v0.4.5/rute_0.4.5_darwin_amd64.tar.gz"
-      sha256 "dae9bed005d7c0c6fb69e39e33f41d95e0227889251393467dd07f5a0ce80c48"
+      url "https://github.com/dio/rute/releases/download/v0.4.6/rute_0.4.6_darwin_amd64.tar.gz"
+      sha256 "1e318c070b400dc620de6c1eb46695d99e2e147cb74833fd227a2323cc460a42"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/dio/rute/releases/download/v0.4.5/rute_0.4.5_linux_arm64.tar.gz"
-      sha256 "365cf1d06c3977114f56ba96a97635b10f9b5b2ea3791114b2153b77d19c4583"
+      url "https://github.com/dio/rute/releases/download/v0.4.6/rute_0.4.6_linux_arm64.tar.gz"
+      sha256 "536040218e8f4df98fe4a26a3585f73cebedea690e315906099813e3efea130d"
     end
     on_intel do
-      url "https://github.com/dio/rute/releases/download/v0.4.5/rute_0.4.5_linux_amd64.tar.gz"
-      sha256 "20c66b013a93f366e97ef4f4ec3613efae71cba15283796a097f00388667cbac"
+      url "https://github.com/dio/rute/releases/download/v0.4.6/rute_0.4.6_linux_amd64.tar.gz"
+      sha256 "29cc68bb8b55f56c4bb1b109d08c8b5f889e6dd028dae63160cb52ce19c49371"
     end
   end
 
